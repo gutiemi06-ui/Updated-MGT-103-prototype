@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Micro Internships — Job Listings for CS Majors</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script>
+      if (localStorage.getItem("loggedIn") !== "true") {
+        window.location.href = "login.html";
+      }
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">MICRO INTERNSHIPS</div>
+        <nav class="nav">
+          <a href="#" class="nav-link active">Home</a>
+          <a href="#jobs" class="nav-link">Jobs</a>
+          <a href="#companies" class="nav-link">Companies</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <h1 class="page-title">Job Listings for Computer Science Majors</h1>
+      <section class="layout">
+        <div class="content" id="jobs"></div>
+
+        <aside class="sidebar" id="companies">
+          <h2 class="sidebar-title">Companies</h2>
+          <div id="companyList" class="company-list"></div>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Micro Internships • Built for students</p>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
